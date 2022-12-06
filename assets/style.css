@@ -1,0 +1,24 @@
+/* basics */
+h1 {
+    margin-bottom: 10px;
+}
+li{
+    text-align: left;
+    color: grey;
+    margin: 10px;
+}
+/* classes */
+.row {
+    margin: 20px;
+}
+.card-title {
+    margin-bottom: 10px;
+}
+.btn {
+    margin: 10px;
+    text-align: left;
+}
+.mobileHoverFix:hover,
+.mobileHoverFix.hover{
+    background-position: 0 0px;
+}

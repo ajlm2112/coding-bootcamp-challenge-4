@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<!-- heading -->
+<div class="row">
+    <div class="col-sm-12">
+    <h1>javascript quiz</h1>
+    </div>
+</div>
+
+<div class="row">
+<!-- start the quiz -->
+    <div class="col-sm-4">
+        <div class="card" style="border: 0;">
+            <div class="card-header">
+                take the quiz
+            </div>
+            <div class="card-body" id="instructions">
+                <button id="startButton" class="btn btn-outline-danger text-center btn-block p-0 my-0">start</button>    
+            </div>
+        </div>
+    </div>
+<!-- score card -->
+    <div class="col-sm-4">
+        <div class="card" style="border: 0;">
+            <div class="card-header">
+                high score
+            </div>
+            <div class="card-body">
+                <button id="clearScores" class="btn btn-outline-secondary text-center btn-block p-0 my-0">clear</button>
+                <div class="text-center">
+                <p id="scoresList"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- timer card -->
+    <div class="col-sm-4">
+        <div class="card" style="border: 0;">
+            <div class="card-header">
+                timer
+            </div>
+            <div class="card-body">
+                <button class="btn btn-outline-secondary text-center btn-block p-0 my-0"><span id="timer">0</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="questionBox">
+<!-- questions card -->
+    <div class="col-sm-12">
+        <div class="card" style="border: 0;">
+            <div class="card-header">
+                <span id="questionText"></span>
+            </div>
+            <div class="card-body">
+                <p id="questionText"><p>
+                <button id="button-1" class="btn btn-outline-secondary text-center btn-block p-0 my-0 yourAnswer" value="1"></button>
+                <br><button id="button-2" class="btn btn-outline-secondary text-center btn-block p-0 my-0 yourAnswer" value="2"></button>
+                <br><button id="button-3" class="btn btn-outline-secondary text-center btn-block p-0 my-0 yourAnswer" value="3"></button>
+                <br><button id="button-4" class="btn btn-outline-secondary text-center btn-block p-0 my-0 yourAnswer" value="4"></button>  
+            </div>
+            <div class="card-footer">
+                <span id="correctIncorrect">&nbsp</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="inputName">
+<!-- final score card and enter your initials -->
+    <div class="col-sm-12">
+        <div class="card" style="border: 0;">
+            <div class="card-header">
+                you scored <span id="score"></span> points
+            </div>
+            <form id="initialsForm">
+                <br><input type="text" id="initials" name="initials"  class="form-control form-control-sm" placeholder="enter your initials and hit ok to try again">
+                <br><button id="submit" class="btn btn-sm btn-outline-secondary p-.5 my-0">ok</button>
+            </form>
+        </div>   
+    </div>
+</div>
+
+<div class="row">
+<!-- i might put something here -->
+    <div class="col-sm-12">
+        <!-- like right here -->
+    </div>
+</div>
+
+</div>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
